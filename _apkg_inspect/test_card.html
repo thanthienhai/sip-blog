@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.card {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  color: #1a1a2e;
+  background: #f8f9ff;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+.front-container, .back-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+
+/* --- Image --- */
+.card-image {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.img-fallback {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  margin: 15px auto;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  text-align: center;
+  line-height: 160px;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* --- Audio button --- */
+.audio-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #667eea;
+  color: #fff !important;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0 10px;
+  transition: background 0.2s;
+}
+.audio-btn:hover { background: #5a6fd6; }
+
+.replay-button { display: none; }
+
+/* --- Text styles --- */
+.word-display {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin: 20px 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.ipa {
+  font-size: 17px;
+  color: #7c7caa;
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.level-A1 { background: #e8f5e9; color: #2e7d32; }
+.level-A2 { background: #e3f2fd; color: #1565c0; }
+.level-B1 { background: #fff3e0; color: #e65100; }
+.level-B2 { background: #fce4ec; color: #c62828; }
+.level-C1 { background: #f3e5f5; color: #6a1b9a; }
+.level-C2 { background: #ede7f6; color: #4527a0; }
+
+.type-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  background: #eef0ff;
+  color: #5c6bc0;
+  margin-top: 8px;
+}
+
+/* --- Back card --- */
+.section { margin-bottom: 20px; }
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9e9ec7;
+  margin-bottom: 6px;
+}
+
+.meaning {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.example-box {
+  background: #ffffff;
+  border-left: 4px solid #7c7caa;
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  margin: 12px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.example-en {
+  font-size: 17px;
+  color: #2a2a4a;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.collocations {
+  font-size: 14px;
+  color: #5c6bc0;
+  line-height: 1.7;
+}
+
+.tag-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.divider {
+  height: 1px;
+  background: #e0e0f0;
+  margin: 18px 0;
+}
+
+.back-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body class="card">
+
+<div class="front-container">
+  <div style="text-align:center; margin-bottom:5px;">
+    <span class="level-badge level-B1">B1</span>
+  </div>
+  
+  <img class="card-image" src="accommodation.jpg">
+  
+  
+  <div class="word-display">accommodation</div>
+  <div class="ipa">/əˌkɑːməˈdeɪʃn/</div>
+  <div style="text-align:center;">[sound:accommodation.mp3]</div>
+  <div class="type-tag">Student Housing</div>
+</div>
+
+</body>
+</html>
